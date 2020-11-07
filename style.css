@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(#0D353D,#07586E);
+    /* background: url('image\tech.png'); */
+    color: rgb(255, 255, 255);
+    font-family: 'calibri',sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+.container {
+     display: grid;
+     grid-template-columns: 80%;
+     justify-content: center;
+     margin-top: 3rem;
+}
+
+/* //screen */
+.screens{
+    
+    display: flex;
+    flex-wrap: wrap;
+    background: #000000;
+    width: 100%;
+    height:150px;
+    font-size: 10px;
+    border: 5px solid #07586E;
+    padding: 10px;
+    margin:0.5rem auto;
+    align-items: top;
+    justify-content: center;
+    
+}
+
+.screens > h2{
+   /* display: inline-block; */
+   border-top:1px solid #fff;
+   height: 10px;
+    color:#1eff00;
+    text-align: center;
+    /* margin:3px; */
+    margin:0 0.5rem;
+
+    flex:0 0 25%;
+    /* justify-content: center; */
+    align-content:flex-start;
+    /* flex:1 1 20%;
+    align-items: flex-start;
+    justify-content: flex-start; */
+}
+
+
+
+/* container-1 and 2*/
+.container-1,.container-2 {
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid #272932;
+    box-shadow: 0 5px 10px #272932;
+    width: 500px;
+    /* background: #ffffff; */
+}
+
+
+/* container 2 */
+/* slider */
+/* below is not necessary, just for style */
+#sliderVal {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+/* slider */
+
+.slider-container {
+    /* display: flex; */
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.slider-container label {
+    float: left;
+    font-size: 1rem;
+    font-weight: bold;
+
+
+
+}
+
+/* //label */
+#slider label {
+    position: absolute;
+    width: 10px;
+    margin-left: -20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+
+
+/* below is not necessary, just for style */
+#slider {
+    width: 100%;
+    margin: .5em auto;
+}
+
+#sliderVal {
+    color: #ffffff;
+    border: 0;
+    font-weight: bold;
+    background: transparent;
+    width: 10%;
+
+}
+
+
+
+/* button */
+button{
+       border:none;
+       outline: none;
+       padding:10px;
+       border-radius: .5rem;
+       font-size: 15px;
+       width:65px;
+}
+
+button:active {
+       background: rgb(136, 136, 136);
+
+       color:white;
+   }
+
+/* 
+.on-off{
+    border-radius: 150px;
+} */
+
+
+/* timer */
+.timer-choices{
+    outline:none;
+    width:50px;
+}
+
+.timer-2choices{
+    outline:none;
+    width:40px;
+    display: inline-block;
+}
+
+.container-2 h4{
+    /* display: inline-block; */
+    margin:10px auto;
+    width: 100px;;
+}
+
+
+
+/* feedback action */
+.feedback-action {
+    border: 2px solid #272932;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+
+.alert {
+    color: red;
+    border-color: red;
+    display: block;
+    margin-bottom: 0.5rem
+}
+
+.success {
+    color: rgb(144, 235, 144);
+    border-color: rgb(144, 235, 144);
+    display: block;
+    margin-bottom: 0.5rem
+}
