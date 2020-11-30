@@ -1,108 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>AirCon </title>
-    
-</head>
-<body>
-<!-- color
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>AirCon</title>
+  </head>
+  <body>
+    <!-- color
 0D353D
 07586E
 -->
-<div class="container">
+    <div class="container">
+      <div class="container-1">
+        <h4 class="feedback-action">Turning On</h4>
+        <div class="screens">
+          <!-- date -->
+          <h2 class="inp screen-Date">date here</h2>
+          <!-- time -->
+          <h2 class="inp screen-time">time here</h2>
+          <!-- sunny, snow, cloudy, fog, raining, wind   -->
+          <h2 class="inp screen-state">state here</h2>
 
+          <!-- cool fan heat-->
+          <h2 class="inp screen-mode">mode</h2>
+          <!--countdown timer -->
+          <h2 class="inp screen-countdown">countdown Timer here</h2>
+          <!-- automatic or not -->
+          <h2 class="inp automatic">manual</h2>
+          <!-- Digit -->
+          <h2 class="inp screen-temp">
+            temp number here <span class="measure">C</span>
+          </h2>
+        </div>
+      </div>
 
-    <div class="container-1">
-    
-            <h4 class="feedback-action">Turning On</h4>
-            <div class="screens">
-                <!-- date -->
-                <h2 class="inp screen-Date">date here</h2>
-                <!-- time -->
-                <h2 class="inp screen-time">time here</h2>
-                <!-- sunny, snow, cloudy, fog, raining, wind   -->
-                <h2 class="inp screen-state">state here</h2> 
-
-                <!-- cool fan heat-->
-                <h2 class="inp screen-mode">mode</h2> 
-                <!--countdown timer -->
-                <h2 class="inp screen-countdown">countdown Timer here</h2> 
-                <!-- automatic or not -->
-                <h2 class="inp automatic">manual</h2>
-                <!-- Digit -->
-                <h2 class="inp screen-temp">temp number here <span class="measure">C</span> </h2>
-
-
-            </div>
-        
-    </div>
-
-
-    <div class="container-2">
+      <div class="container-2">
         <!-- button toggle -->
-        <button class="on-off"><i class="fa fa-power-off" aria-hidden="true"></i></button>
-
+        <button class="on-off">
+          <i class="fa fa-power-off" aria-hidden="true"></i>
+        </button>
 
         <!-- slider -->
         <div class="slider-container">
-             <label class="valve-label" for="slider">Temperature:</label>
-             <input type="text" name="" id="sliderVal" readonly>
-             <button type="button" class="btn2 btn-submit">Submit</button>
-             <div class="slider" id="slider"></div>
-
+          <label class="valve-label" for="slider">Temperature:</label>
+          <input type="text" name="" id="sliderVal" readonly />
+          <button type="button" class="btn2 btn-submit">Submit</button>
+          <div class="slider" id="slider"></div>
         </div>
 
         <div class="buttons-2">
-            <h4 class="temp-label">Temp <i class="fa fa-sun-o"></i></h4>
-            <button class="btn btn-Increase"><i class="fa fa-arrow-up"></i></button>
-            <button class="btn btn-decrease"><i class="fa fa-arrow-down"></i></button>
-            <!-- timer -->
-            <h4 class="timer-label">Timer <i class="fa fa-clock-o"></i> </h4>
-            <input class="timer-choices" name="Timer"readonly>
-            <!-- select hour second  -->
-            <select name="" class="timer-2choices"readonly>
-                <option value="" selected="selected">Off</option>
-                <!-- <option value="">Hours</option> -->
-                <option value="">Minutes</option>
-                <option value="">Seconds</option>
-            </select>
-                <button type="button" class="btn2 btn-submit-1">Submit</button>     
-              <!--mode  -->
-            <h4 class="mode-label">Mode <i class="fa-cloud"></i> </h4>
-             <select name="" class="mode-choices"readonly>
-                <option value="" selected="selected">Cool</option>
-                <option value="">fan</option>
-                <option value="">Heat</option>
-             </select>
-                <button type="button" class="btn2 btn-submit-2">Submit</button>     
+          <h4 class="temp-label">Temp <i class="fa fa-sun-o"></i></h4>
+          <button class="btn btn-Increase">
+            <i class="fa fa-arrow-up"></i>
+          </button>
+          <button class="btn btn-decrease">
+            <i class="fa fa-arrow-down"></i>
+          </button>
+          <!-- timer -->
+          <h4 class="timer-label">Timer <i class="fa fa-clock-o"></i></h4>
+          <input class="timer-choices" name="Timer" readonly />
+          <!-- select hour second  -->
+          <select name="" class="timer-2choices" readonly>
+            <option value="" selected="selected">Off</option>
+            <!-- <option value="">Hours</option> -->
+            <option value="">Minutes</option>
+            <option value="">Seconds</option>
+          </select>
+          <button type="button" class="btn2 btn-submit-1">Submit</button>
+          <!--mode  -->
+          <h4 class="mode-label">Mode <i class="fa-cloud"></i></h4>
+          <select name="" class="mode-choices" readonly>
+            <option value="" selected="selected">Cool</option>
+            <option value="">fan</option>
+            <option value="">Heat</option>
+          </select>
+          <button type="button" class="btn2 btn-submit-2">Submit</button>
 
-         <h4 class="choose-label">Choose <i class="fa-hand-pointer-o"></i> </h4>
-            <select name="" class="automatic-ornot"readonly>
-                <option value="Manual" selected="selected">Manual</option>
-                <option value="Automatic">Automatic</option>
-            </select>
-                <button type="button" class="btn2 btn-submit-3">Submit</button>     
+          <h4 class="choose-label">Choose <i class="fa-hand-pointer-o"></i></h4>
+          <select name="" class="automatic-ornot" readonly>
+            <option value="Manual" selected="selected">Manual</option>
+            <option value="Automatic">Automatic</option>
+          </select>
+          <button type="button" class="btn2 btn-submit-3">Submit</button>
 
-        <!-- jquery -->
-
+          <!-- jquery -->
         </div>
+      </div>
     </div>
-
-
-    </div>
-
 
     <!-- script.. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- ui -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

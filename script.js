@@ -408,17 +408,48 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  document.getElementById(".screen-countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    clearInterval(action);
+    document.getElementById(".screen-countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
 **/
 
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+  var x = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text(minutes + ":" + seconds);
+
+        // console.log(typeof x);
+    if (timer === 0) {
+    clearInterval(x);
+    
+  showFeed(feedbackAction,"Shutting down",true);
+  $(".inp").hide("slow");
+    timer = 0;
+    
+  }else{
+    
+    --timer
+  } 
+        
+    }, 1000);
+    
+   
+
+
+}
 const screenTimer= $(".timer-2choices").find(':selected').text();
 const screenCountdown = $(".screen-countdown");
 //screen-countdown
@@ -429,7 +460,7 @@ $(".btn-submit-1").click(function(){
   
   var val=$(".timer-choices").val();
   console.log(val);
-  // startTimer(val,screenCountdown);
+  startTimer(val,screenCountdown);
 
 });
 
